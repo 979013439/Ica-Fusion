@@ -1,0 +1,22 @@
+# 数据集描述和训练命令等信息
+# Train command: python train.py --data your_dataset.yaml
+# Default dataset location is next to YOLOv5:
+#   /parent_folder
+#     /your_dataset
+#     /yolov5
+
+# 下载命令/URL (可选)
+download: 
+
+# 训练和验证数据的路径
+path: ./datasets/IR-5c
+train_rgb: ./datasets/IR-5c/visible/train
+val_rgb: ./datasets/IR-5c/visible/test
+train_ir: ./datasets/IR-5c/infrared/train
+val_ir: ./datasets/IR-5c/infrared/test
+
+# 类别数量
+nc: 7
+
+# 类别名称
+names: ['person', 'car', 'bike', 'color_cone', 'car_stop','bump','hole']
